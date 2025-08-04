@@ -1,0 +1,15 @@
+/*
+ * sing.c
+ *
+ *  Created on: Nov 3, 2024
+ *      Author: LENOVO
+ */
+
+struct Note{
+	bool stop;
+	int period;
+	int last;
+	Note *next;
+};
+
+

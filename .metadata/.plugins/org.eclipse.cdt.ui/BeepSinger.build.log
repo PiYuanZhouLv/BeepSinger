@@ -1,0 +1,87 @@
+19:19:56 **** Incremental Build of configuration Debug for project BeepSinger ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/EPD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/EPD.d" -MT"Core/Src/EPD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/EPD.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:3: warning: implicit declaration of function 'EPD_demo' [-Wimplicit-function-declaration]
+  104 |   EPD_demo();
+      |   ^~~~~~~~
+../Core/Src/main.c: In function 'EPD_demo':
+../Core/Src/main.c:401:41: warning: pointer targets in passing argument 3 of 'EPD_ShowString' differ in signedness [-Wpointer-sign]
+  401 |                 EPD_ShowString(108, 20, "2014/05/01", 16, BLACK);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         char *
+In file included from ../Core/Src/main.c:25:
+../Core/Src/EPD.h:76:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   76 | void EPD_ShowString(uint16_t x, uint16_t y, uint8_t *chr, uint16_t size1, uint16_t color);                       // 显示字符�?
+      |                                             ~~~~~~~~~^~~
+../Core/Src/main.c:402:40: warning: pointer targets in passing argument 3 of 'EPD_ShowString' differ in signedness [-Wpointer-sign]
+  402 |                 EPD_ShowString(80, 40, "ASCII:", 16, BLACK);
+      |                                        ^~~~~~~~
+      |                                        |
+      |                                        char *
+../Core/Src/EPD.h:76:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   76 | void EPD_ShowString(uint16_t x, uint16_t y, uint8_t *chr, uint16_t size1, uint16_t color);                       // 显示字符�?
+      |                                             ~~~~~~~~~^~~
+../Core/Src/main.c:403:41: warning: pointer targets in passing argument 3 of 'EPD_ShowString' differ in signedness [-Wpointer-sign]
+  403 |                 EPD_ShowString(157, 40, "CODE:", 16, BLACK);
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         char *
+../Core/Src/EPD.h:76:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   76 | void EPD_ShowString(uint16_t x, uint16_t y, uint8_t *chr, uint16_t size1, uint16_t color);                       // 显示字符�?
+      |                                             ~~~~~~~~~^~~
+../Core/Src/main.c:411:40: warning: pointer targets in passing argument 3 of 'EPD_ShowString' differ in signedness [-Wpointer-sign]
+  411 |                 EPD_ShowString(33, 56, "Welcome to 2.90-inch E-paper", 16, BLACK);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                        |
+      |                                        char *
+../Core/Src/EPD.h:76:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   76 | void EPD_ShowString(uint16_t x, uint16_t y, uint8_t *chr, uint16_t size1, uint16_t color);                       // 显示字符�?
+      |                                             ~~~~~~~~~^~~
+../Core/Src/main.c:412:40: warning: pointer targets in passing argument 3 of 'EPD_ShowString' differ in signedness [-Wpointer-sign]
+  412 |                 EPD_ShowString(49, 73, "with 296 x 128 resolution", 16, BLACK);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                        |
+      |                                        char *
+../Core/Src/EPD.h:76:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   76 | void EPD_ShowString(uint16_t x, uint16_t y, uint8_t *chr, uint16_t size1, uint16_t color);                       // 显示字符�?
+      |                                             ~~~~~~~~~^~~
+../Core/Src/main.c:414:40: warning: pointer targets in passing argument 3 of 'EPD_ShowString' differ in signedness [-Wpointer-sign]
+  414 |                 EPD_ShowString(53, 90, "Zhongjingyuan Electronic", 16, BLACK);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                        |
+      |                                        char *
+../Core/Src/EPD.h:76:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   76 | void EPD_ShowString(uint16_t x, uint16_t y, uint8_t *chr, uint16_t size1, uint16_t color);                       // 显示字符�?
+      |                                             ~~~~~~~~~^~~
+../Core/Src/main.c:415:41: warning: pointer targets in passing argument 3 of 'EPD_ShowString' differ in signedness [-Wpointer-sign]
+  415 |                 EPD_ShowString(75, 106, "Technology Co.,Ltd.", 16, BLACK);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~
+      |                                         |
+      |                                         char *
+../Core/Src/EPD.h:76:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   76 | void EPD_ShowString(uint16_t x, uint16_t y, uint8_t *chr, uint16_t size1, uint16_t color);                       // 显示字符�?
+      |                                             ~~~~~~~~~^~~
+../Core/Src/main.c:376:13: warning: unused variable 'c' [-Wunused-variable]
+  376 |         int c = 0;
+      |             ^
+../Core/Src/EPD.c: In function 'EPD_GUIInit':
+../Core/Src/EPD.c:96:3: warning: implicit declaration of function 'delay_ms' [-Wimplicit-function-declaration]
+   96 |   delay_ms(20);  // At least 10ms delay
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "BeepSinger.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\PiYuanZhouLv\sl\BeepSinger\BeepSinger\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BeepSinger.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BeepSinger.elf
+ 
+arm-none-eabi-size  BeepSinger.elf 
+arm-none-eabi-objdump -h -S BeepSinger.elf  > "BeepSinger.list"
+   text	   data	    bss	    dec	    hex	filename
+  19604	     12	   6484	  26100	   65f4	BeepSinger.elf
+Finished building: default.size.stdout
+ 
+Finished building: BeepSinger.list
+ 
+
+19:19:59 Build Finished. 0 errors, 10 warnings. (took 2s.538ms)
+

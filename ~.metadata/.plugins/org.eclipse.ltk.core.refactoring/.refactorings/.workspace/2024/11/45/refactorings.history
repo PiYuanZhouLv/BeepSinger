@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;BeepSinger/Core/Src/sing.c&apos;" deleteContents="false" description="Delete resource &apos;BeepSinger/Core/Src/sing.c&apos;" element1="/BeepSinger/Core/Src/sing.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1730621018327"/>
+</session>
