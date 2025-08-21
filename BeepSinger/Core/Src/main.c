@@ -99,9 +99,9 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
-//	sing(&summer_wind_in_the_forest);
+  sing(&summer_wind_in_the_forest); // Change here to switch song.
   HAL_TIM_Base_Start_IT(&htim3);
-  EPD_demo();
+  // EPD_demo();
 
   /* USER CODE END 2 */
 
